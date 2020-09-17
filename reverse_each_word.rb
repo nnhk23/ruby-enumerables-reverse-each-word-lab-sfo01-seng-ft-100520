@@ -5,6 +5,5 @@ def reverse_each_word(string)
   array.each {
     |element| element.length.times{reversed << element.split("").pop}
   }
-  binding.pry
   reversed.join
 end
