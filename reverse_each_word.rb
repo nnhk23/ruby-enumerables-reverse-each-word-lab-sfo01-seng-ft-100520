@@ -4,7 +4,7 @@ def reverse_each_word(string)
   result = []
   array = string.split(" ")
   array.each {
-    |element| reversed << element.split("").pop
+    |element| element.length.times{reversed << element.split("").pop}
   }
   result.join
   binding.pry
