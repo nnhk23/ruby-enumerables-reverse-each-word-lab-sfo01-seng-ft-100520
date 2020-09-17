@@ -4,7 +4,7 @@ def reverse_each_word(string)
   result = []
   array = string.split(" ")
   array.each {
-    |element| reversed << element.split("")
+    |element| reversed << element.split("").pop
   }
   reversed.each {
     |letter| result.unshift(letter.to_a)
