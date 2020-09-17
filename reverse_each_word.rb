@@ -7,7 +7,7 @@ def reverse_each_word(string)
     |element| reversed.unshift(element.split(""))
   }
   reversed.each {
-    |letter| result << letter.split("")
+    |letter| result << letter.to_a
   }
   result.join
   binding.pry
