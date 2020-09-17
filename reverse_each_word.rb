@@ -5,6 +5,6 @@ def reverse_each_word(string)
   array.each {
     |element| reversed.unshift(element.split(""))
   }
-  binding.pry
   reversed.join
+  binding.pry
 end
